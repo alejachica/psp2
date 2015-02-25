@@ -22,9 +22,8 @@ import org.eclipse.jetty.servlet.ServletHolder;
 import edu.uniandes.ecos.psp2.controlador.Controlador;
 
 /**
- * Clase que muestra el resultado del conteo de LOCs en un servidor web.
+ * Clase que muestra el resultado 
  */
-@SuppressWarnings("serial")
 public class App extends HttpServlet {
 
     /* (non-Javadoc)
