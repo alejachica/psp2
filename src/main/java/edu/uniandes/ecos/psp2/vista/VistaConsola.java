@@ -3,12 +3,16 @@ package edu.uniandes.ecos.psp2.vista;
 import edu.uniandes.ecos.psp2.controlador.Controlador;
 
 /**
- * 
+ *Clase que permite probar el programa psp2 por consola. 
  *
  */
 public class VistaConsola {
 
 
+	/**
+	 * Metodo que permite ejecutar una aplicacion java
+	 * @param args argumentos de java
+	 */
 	public static void main(String[] args) {
 
 		test1();
@@ -17,7 +21,7 @@ public class VistaConsola {
 	}
 
 	/**
-	 * 
+	 * Metodo que permite ejecutar el test1
 	 */
 	public static void test1() {
 
@@ -33,7 +37,7 @@ public class VistaConsola {
 	}
 
 	/**
-	 * 
+	 * Metodo que permite ejecutar el test2
 	 */
 	public static void test2() {
 
@@ -48,7 +52,7 @@ public class VistaConsola {
 	}
 	
 	/**
-	 * 
+	 * Metodo que permite ejecutar el test3
 	 */
 	public static void test3() {
 
