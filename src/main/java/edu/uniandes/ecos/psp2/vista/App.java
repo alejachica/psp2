@@ -19,7 +19,6 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
-import edu.uniandes.ecos.psp11.vista.App;
 import edu.uniandes.ecos.psp2.controlador.Controlador;
 
 /**
