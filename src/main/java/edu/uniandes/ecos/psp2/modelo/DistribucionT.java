@@ -4,11 +4,18 @@
 package edu.uniandes.ecos.psp2.modelo;
 
 /**
+ * Clase que permite calcular el valor de la distribucion T.
  * @author Aleja Chica
  *
  */
 public class DistribucionT {
 
+	/**
+	 * Metodo que permite calcular el valor de la distribucion T.
+	 * @param dof Grados de libertad
+	 * @param x Valor de X
+	 * @return double con el resultado del calculo de la distribucion T.
+	 */
 	public double calcularDistribucionT(double dof, double x) {
 
 		double dividendo;
@@ -52,8 +59,9 @@ public class DistribucionT {
 	}
 
 	/**
-	 * @param x
-	 * @return
+	 * Metodo que permite calcular el valor de la funcion gamma cuando el parametro es entero.
+	 * @param x Parametro de la funcion gamma.
+	 * @return long con el resultado del calculo de la funcion gamma para numero entero.
 	 */
 	public long funcionGammaEnteros(int x) {
 		
@@ -69,8 +77,9 @@ public class DistribucionT {
 	}
 
 	/**
-	 * @param x
-	 * @return
+	 * Metodo que permite calcular el valor de la funcion gamma cuando el parametro no es entero.
+	 * @param x Parametro de la funcion gamma.
+	 * @return double con el resultado del calculo de la funcion gamma para numero no entero.
 	 */
 	public double funcionGammaNoEnteros(double x) {
 
@@ -81,7 +90,7 @@ public class DistribucionT {
 		while (x >= 0.5) {
 
 			factorial *= x;
-			x = x - 1;
+			x -= 1;
 		}
 		
 		factorial *= Math.sqrt(Math.PI);

@@ -4,49 +4,52 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Clase que permite calcular una integral numerica.
  * @author Aleja Chica
  *
  */
 public class IntegracionNumerica {
 
 	/**
-	 * 
+	 * El ancho del segmento
 	 */
 	private double w;
 
 	/**
-	 * 
+	 * Numero inicial de segmentos, un numero par.
 	 */
 	private int numSeg;
 
 	/**
-	 * 
+	 * Grados de libertad
 	 */
 	private double dof;
 
 	/**
-	 * 
+	 * Lista de valores de X
 	 */
 	private List<Double> valoresX;
 
 	/**
-	 * 
+	 * Calculadora de la distribucion T.
 	 */
 	private DistribucionT calculadoraDistribucionT;
 
 	/**
-	 * 
+	 * Calculadora de la sumatoria
 	 */
 	private Sumatoria sumatoria;
 
 	/**
-	 * 
+	 * Sumatoria de los valores de X
 	 */
 	private List<Double> numerosSum;
 
 	/**
-	 * @param w
-	 * @param dof
+	 * Metodo constructor.
+	 * @param dof Grados de libertad
+     * @param numSeg Numero de segmentos
+     * @param valorX Valor de X
 	 */
 	public IntegracionNumerica(double dof, int numSeg, double valorX) {
 
@@ -62,7 +65,8 @@ public class IntegracionNumerica {
 	}
 
 	/**
-	 * @return
+	 * Metodo que permite calcular una integral numerica
+	 * @return double con el resultado del calculo de la integral.
 	 */
 	public double calcularIntegral() {
 
@@ -94,9 +98,9 @@ public class IntegracionNumerica {
 	}
 
 	/**
-	 * @param i
-	 * @param valoresImpares
-	 * @return
+	 * Metodo que permite calcular el multiplicador de F(x).
+	 * @param i numero par o impar que permite determinar el valor del multiplicador.
+	 * @return double con el valor del multiplicador.
 	 */
 	public double calcularMultiplicador(int i) {
 
@@ -119,7 +123,9 @@ public class IntegracionNumerica {
 	}
 
 	/**
-	 * @param x
+	 * Metodo que permite calcular F(x).
+	 * @param x Parametro de la funcion F(x).
+	 * @return double con el valor de la funcion F(x).
 	 */
 	public double calcularFx(double x) {
 
@@ -127,8 +133,9 @@ public class IntegracionNumerica {
 	}
 
 	/**
-	 * @param x
-	 * @return
+	 * Metodo que permite calcular los valores de X para la integral.
+	 * @param x Valor inicial de X.
+	 * @return List<Double> con los valores de X para la integral.
 	 */
 	private List<Double> calcularValoresX(double x) {
 
