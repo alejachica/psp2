@@ -2,6 +2,7 @@ package edu.uniandes.ecos.psp2.test;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import edu.uniandes.ecos.psp2.modelo.IntegracionNumerica;
@@ -21,6 +22,7 @@ public class TestIntegracionNumerica {
 	/**
 	 * Metodo que permite configurar los datos de prueba
 	 */
+	@Before
 	public void configurarDatos(){
 		
 		integracionNumerica = new IntegracionNumerica(9, 10, 1.1);
