@@ -1,6 +1,6 @@
 package edu.uniandes.ecos.psp2.test;
 
-import static org.junit.Assert.*;
+import junit.framework.Assert;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -9,7 +9,7 @@ import edu.uniandes.ecos.psp2.modelo.IntegracionNumerica;
 
 /**
  * TestCase para la clase edu.uniandes.ecos.psp2.modelo.IntegracionNumerica
- * @author ingeneo
+ * @author Aleja Chica
  *
  */
 public class TestIntegracionNumerica {
@@ -35,6 +35,7 @@ public class TestIntegracionNumerica {
 	public void testCalcularIntegral() {
 		
 		double resultado = integracionNumerica.calcularIntegral();
+		Assert.assertEquals(0.3500589042865572, resultado);
 	}
 
 	/**
@@ -44,6 +45,7 @@ public class TestIntegracionNumerica {
 	public void testCalcularMultiplicador() {
 		
 		double multiplicador = integracionNumerica.calcularMultiplicador(2);
+		Assert.assertEquals(2.0, multiplicador);
 	}
 
 	/**
@@ -53,6 +55,7 @@ public class TestIntegracionNumerica {
 	public void testCalcularFx() {
 		
 		double resultado = integracionNumerica.calcularFx(1.1);
+		Assert.assertEquals(0.20651644224485102, resultado);
 	}
 
 }

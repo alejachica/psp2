@@ -1,7 +1,5 @@
 package edu.uniandes.ecos.psp2.test;
 
-import static org.junit.Assert.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +12,7 @@ import edu.uniandes.ecos.psp2.modelo.Sumatoria;
 
 /**
  * TestCase para la clase edu.uniandes.ecos.psp2.modelo.Sumatoria
- * @author ingeneo
+ * @author Aleja Chica
  *
  */
 public class TestSumatoria {
@@ -52,9 +50,7 @@ public class TestSumatoria {
 	 */
 	@Test
 	public void testCalcularSumatoria() {
-		
-		
 		double resultado = sumatoria.calcularSumatoria(numeros);
-//		Assert.assertEquals(15.0, resultado);
+		Assert.assertEquals(15.0, resultado);
 	}
 }

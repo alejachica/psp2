@@ -4,7 +4,7 @@ import edu.uniandes.ecos.psp2.controlador.Controlador;
 
 /**
  *Clase que permite probar el programa psp2 por consola. 
- *
+ *@author Aleja Chica
  */
 public class VistaConsola {
 
