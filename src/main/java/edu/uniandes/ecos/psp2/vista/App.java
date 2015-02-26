@@ -22,7 +22,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 import edu.uniandes.ecos.psp2.controlador.Controlador;
 
 /**
- * Clase que muestra el resultado
+ * Clase que muestra el resultado en heroku del calculo de la integral numerica.
  */
 public class App extends HttpServlet {
 
@@ -44,10 +44,11 @@ public class App extends HttpServlet {
 	}
 
 	/**
-	 * @param req
-	 * @param resp
-	 * @throws ServletException
-	 * @throws IOException
+	 * Metodo que permite mostrar el inicio de la aplicacion.
+	 * @param req request  
+	 * @param resp response
+	 * @throws ServletException Excepcion al ejecutar la peticion
+	 * @throws IOException Excepcion al ejecutar la peticion
 	 */
 	private void showHome(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -86,13 +87,6 @@ public class App extends HttpServlet {
 	 * javax.servlet.http.HttpServlet#doPost(javax.servlet.http.HttpServletRequest
 	 * , javax.servlet.http.HttpServletResponse)
 	 */
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * javax.servlet.http.HttpServlet#doPost(javax.servlet.http.HttpServletRequest
-	 * , javax.servlet.http.HttpServletResponse)
-	 */
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -107,10 +101,11 @@ public class App extends HttpServlet {
 	}
 
 	/**
-	 * @param req
-	 * @param resp
-	 * @throws ServletException
-	 * @throws IOException
+	 * Metodo de prueba de BD.
+	 * @param req request  
+	 * @param resp response
+	 * @throws ServletException Excepcion al ejecutar la peticion
+	 * @throws IOException Excepcion al ejecutar la peticion
 	 */
 	private void showDatabase(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		Connection connection = null;
@@ -141,9 +136,10 @@ public class App extends HttpServlet {
 	}
 
 	/**
-	 * @return
-	 * @throws URISyntaxException
-	 * @throws SQLException
+	 * Metodo de prueba de conexion.
+	 * @return Conexion solicitada.
+	 * @throws URISyntaxException Excepcion al ejecutar la consulta.
+	 * @throws SQLException Excepcion al ejecutar la consulta.
 	 */
 	private Connection getConnection() throws URISyntaxException, SQLException {
 		URI dbUri = new URI(System.getenv("DATABASE_URL"));
@@ -158,8 +154,9 @@ public class App extends HttpServlet {
 	}
 
 	/**
-	 * @param args
-	 * @throws Exception
+	 * Metodo que permite ejecutar una aplicacion Java.
+	 * @param args Argumentos de java
+	 * @throws Exception Excepcion al ejecutar la peticion.
 	 */
 	public static void main(String[] args) throws Exception {
 
