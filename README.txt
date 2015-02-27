@@ -31,3 +31,4 @@ dof = 30
 NumSeg = 10 
 
 Los formatos de psp2 y los archivos de test se encuentran en : psp2\src\site\resources
+El javadoc se encuentra en: psp2\src\site\resources\javadoc
